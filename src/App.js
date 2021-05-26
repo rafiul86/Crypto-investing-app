@@ -6,6 +6,9 @@ import Home from "./components/home/Home";
 import Incubator from "./components/incubator/Incubator";
 import Learn from "./components/learn/Learn";
 import FundStartUp from "./components/shared/fundStartUp/FundStartUp";
+import Welcome from "./components/learn/welcome/Welcome";
+import Progress from "./components/learn/progress/Progress";
+import Tutorial from "./components/learn/tutorial/Tutorial";
 
 
 function App() {
@@ -27,6 +30,15 @@ function App() {
           </Route>
           <Route path="/fundStartUp">
             <FundStartUp />
+          </Route>
+          <Route path="/welcome">
+            <Welcome />
+          </Route>
+          <Route path="/progress">
+            <Progress />
+          </Route>
+          <Route path="/tutorial">
+            <Tutorial />
           </Route>
         </Switch>
     </Router>

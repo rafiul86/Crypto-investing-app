@@ -3,6 +3,9 @@ import "./App.css";
 import React from "react";
 import {  BrowserRouter as Router,  Switch,  Route,  Link} from "react-router-dom";
 import Home from "./components/home/Home";
+import Incubator from "./components/incubator/Incubator";
+import Learn from "./components/learn/Learn";
+import FundStartUp from "./components/shared/fundStartUp/FundStartUp";
 
 
 function App() {
@@ -15,6 +18,15 @@ function App() {
           </Route>
           <Route path="/home">
             <Home />
+          </Route>
+          <Route path="/incubator">
+            <Incubator />
+          </Route>
+          <Route path="/learn">
+            <Learn />
+          </Route>
+          <Route path="/fundStartUp">
+            <FundStartUp />
           </Route>
         </Switch>
     </Router>

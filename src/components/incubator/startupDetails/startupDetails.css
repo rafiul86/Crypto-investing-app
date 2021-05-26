@@ -1,0 +1,19 @@
+.startup-details{
+background-color: white;
+text-align: justify;
+margin:0px;
+color: #000000;
+padding: 40px;
+border-radius: 1px;
+border-bottom: 1px;
+}
+.related-details{
+    margin-top: 10px;
+    background-color: white;
+    text-align: justify;
+    margin:0px;
+    color: #000000;
+    padding: 40px;
+    border-radius: 1px;
+    border-bottom: 1px;  
+}

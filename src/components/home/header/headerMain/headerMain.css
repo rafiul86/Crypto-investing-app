@@ -1,0 +1,20 @@
+
+.header-container{
+    background-image: url('../../../../images/mobile.png');
+    background-repeat: no-repeat;
+    height: 350px;
+    background-size: cover;
+}
+.btn-container{
+    border-radius: 3px;
+    height: 30px;
+    width: 140px;
+    color: antiquewhite;
+    background: linear-gradient(104.61deg, #FF00B8 2.65%, #FF655B 51.83%, #FFC700 100%);
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+
+
+

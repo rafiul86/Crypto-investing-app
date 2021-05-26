@@ -11,3 +11,10 @@
     align-items: flex-start;
     justify-content: center;
 }
+.btn-resume{
+    color: white;
+    background-color:#151371 ;
+    border-radius: 6px;
+    height: 35px;
+    width: 130px;
+}

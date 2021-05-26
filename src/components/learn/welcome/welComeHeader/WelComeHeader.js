@@ -15,6 +15,7 @@ const WelComeHeader = ({handleClick}) => {
                     <h1 className="welcome-headline text-white">Welcome back, <br />
                     Shot</h1>
                     <h3 style={{fontStyle : 'italic', alignItems: 'center', color: "white"}}> 75% <span style={{fontStyle : 'italic' , color: "white"}}>Completed</span></h3>
+                    <button className="btn-resume" onClick={handleClick}>Resume</button>
                     </div>
                 </Grid>
             </Grid>

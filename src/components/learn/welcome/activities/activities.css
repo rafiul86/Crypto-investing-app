@@ -1,0 +1,12 @@
+.activity-holder{
+    margin-top: 30px;
+    background-color: #151371;
+}
+
+.activity-container{
+    padding: 40px;
+    margin-top: 60px;
+    color : white;
+    display: flex;
+    justify-content: space-around;
+}

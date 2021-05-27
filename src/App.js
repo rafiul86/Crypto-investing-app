@@ -12,6 +12,7 @@ import Tutorial from "./components/learn/tutorial/Tutorial";
 import Main from "./components/main/Main";
 import StartupDetails from "./components/incubator/startupDetails/StartupDetails";
 import Upcoming from "./components/home/header/upcoming/Upcoming";
+import ProgressAnalysis from "./components/learn/progress/ProgressAnalysis";
 
 
 function App() {
@@ -48,6 +49,9 @@ function App() {
           </Route>
           <Route path="/featured">
             <Upcoming />
+          </Route>
+          <Route path="/progressAnalysis/:id">
+            <ProgressAnalysis />
           </Route>
         </Switch>
     </Router>

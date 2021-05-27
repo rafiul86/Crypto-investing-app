@@ -1,20 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import SideBar from '../sideBar/SideBar';
 import NavBar from '../../shared/navBar/NavBar';
 import { useParams } from 'react-router';
 import featuredCoursesData from '../../learn/featuredCourses/featuredCourses.json';
 import ProgressHeader from './progressHeader/ProgressHeader';
 import ProgressList from './ProgressList';
+import progressData from './progress.json';
+
 
 const Progress = () => {
 
     const {id} = useParams();
-    console.log(id)
+
     const featuredCourseDetails = featuredCoursesData.find( featuredCourse => featuredCourse.id == id)
-    const handleClick = () =>{
-        // this button is for resume the course
-        
-    }
+    const [lists , setLists] = useState([])
+    useEffect(()=>{
+        setLists(progressData)
+    },[])
     return (
         <div className="row">
             <NavBar />
@@ -23,7 +25,11 @@ const Progress = () => {
             </div>
             <div className="col-sm-9 col-md-9 col-lg-9">
                 <ProgressHeader featuredCourseDetails={featuredCourseDetails}/>
-                <ProgressList featuredCourseDetails={featuredCourseDetails}/>
+                <div>
+                    {
+                        lists.map(list => <ProgressList list={list}/>)
+                    }
+                </div>
             </div>
         </div>
     );

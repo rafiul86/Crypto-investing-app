@@ -10,7 +10,7 @@ const Tutorial = () => {
             </div>
             <div className="col-sm-9 col-md-9 col-lg-9">
             
-            <h1>This is welcome</h1>
+            <h1>This is tutorial Activity</h1>
             </div>
         </div>
     );

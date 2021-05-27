@@ -25,7 +25,7 @@ const useStyles = makeStyles({
       marginBottom: 12,
     },
   });
-const MyCourse = ({myCourse}) => {
+const SingleStartup = ({singleStartup}) => {
     const classes = useStyles();
     return (
         <Card className={classes.root} variant="outlined">
@@ -34,27 +34,26 @@ const MyCourse = ({myCourse}) => {
             R
           </Avatar>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
-          {myCourse.title}
+          {singleStartup.title}
         </Typography>
-        <Link to={`/welcome/${myCourse.id}`}>Learn</Link>
         <Typography variant="h5" component="h2">
-          {myCourse.completePercentage}
+          {singleStartup.description}
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
           adjective
         </Typography>
         <Typography variant="body2" component="p">
-          {myCourse.module}
+          well meaning and kindly.
           <br />
           {'"a benevolent smile"'}
         </Typography>
       </CardContent>
       <CardActions>
-        <Button  size="small"><Link to={`/incubator/${myCourse.id}`}>Learn More</Link></Button>
+        <Button  size="small"><Link to={`/incubator/${singleStartup.id}`}>Learn More</Link></Button>
       </CardActions>
     </Card>
     );
 };
 
+export default SingleStartup;
 
-export default MyCourse;

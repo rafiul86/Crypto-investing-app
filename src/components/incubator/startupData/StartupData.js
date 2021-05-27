@@ -1,10 +1,10 @@
 import React from 'react';
 
-const StartupData = () => {
+const StartupData = ({individualDetails}) => {
     return (
         <div className="bg-white">
-            <h1>Name</h1>
-            <h1>Roll NUMBER</h1>
+            <h1>{individualDetails.location}</h1>
+            <h1>{individualDetails.size}</h1>
         </div>
     );
 };

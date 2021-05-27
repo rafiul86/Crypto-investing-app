@@ -1,7 +1,19 @@
 import React from 'react';
 import SideBar from '../sideBar/SideBar';
-import NavBar from '../../shared/navBar/NavBar'
+import NavBar from '../../shared/navBar/NavBar';
+import { useParams } from 'react-router';
+import featuredCoursesData from '../../learn/featuredCourses/featuredCourses.json';
+import ProgressHeader from './progressHeader/ProgressHeader';
+import ProgressList from './ProgressList';
+
 const Progress = () => {
+
+    const {id} = useParams()
+    const featuredCourseDetails = featuredCoursesData.find( featuredCourse => featuredCourse.id == id)
+    const handleClick = () =>{
+        // this button is for resume the course
+        console.log('start course here')
+    }
     return (
         <div className="row">
             <NavBar />
@@ -9,11 +21,13 @@ const Progress = () => {
             <SideBar />
             </div>
             <div className="col-sm-9 col-md-9 col-lg-9">
-            
-            <h1>This is progress</h1>
+                <ProgressHeader />
+                <ProgressList featuredCourseDetails={featuredCourseDetails}/>
             </div>
         </div>
     );
 };
+
+
 
 export default Progress;

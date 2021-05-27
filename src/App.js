@@ -9,6 +9,8 @@ import FundStartUp from "./components/shared/fundStartUp/FundStartUp";
 import Welcome from "./components/learn/welcome/Welcome";
 import Progress from "./components/learn/progress/Progress";
 import Tutorial from "./components/learn/tutorial/Tutorial";
+import Main from "./components/main/Main";
+import StartupDetails from "./components/incubator/startupDetails/StartupDetails";
 
 
 function App() {
@@ -17,12 +19,15 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/">
-            <Home />
+            <Main />
+          </Route>
+          <Route path="/main">
+            <Main />
           </Route>
           <Route path="/home">
             <Home />
           </Route>
-          <Route path="/incubator">
+          <Route path="/incubator/:id">
             <Incubator />
           </Route>
           <Route path="/learn">
@@ -31,10 +36,10 @@ function App() {
           <Route path="/fundStartUp">
             <FundStartUp />
           </Route>
-          <Route path="/welcome">
+          <Route path="/welcome/:id">
             <Welcome />
           </Route>
-          <Route path="/progress">
+          <Route path="/progress/:id">
             <Progress />
           </Route>
           <Route path="/tutorial">

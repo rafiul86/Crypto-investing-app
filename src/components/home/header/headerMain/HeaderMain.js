@@ -7,7 +7,7 @@ import { useHistory } from 'react-router';
 const HeaderMain = () => {
     const history =   useHistory()
     const handleClick = () => {
-         history.push('/incubator')
+         history.push('/featured')
     }
     return (
         <div className="header-container">

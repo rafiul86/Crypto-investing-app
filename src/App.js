@@ -11,6 +11,7 @@ import Progress from "./components/learn/progress/Progress";
 import Tutorial from "./components/learn/tutorial/Tutorial";
 import Main from "./components/main/Main";
 import StartupDetails from "./components/incubator/startupDetails/StartupDetails";
+import Upcoming from "./components/home/header/upcoming/Upcoming";
 
 
 function App() {
@@ -44,6 +45,9 @@ function App() {
           </Route>
           <Route path="/tutorial">
             <Tutorial />
+          </Route>
+          <Route path="/featured">
+            <Upcoming />
           </Route>
         </Switch>
     </Router>

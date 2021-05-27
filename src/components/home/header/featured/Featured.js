@@ -21,7 +21,7 @@ const Featured = () => {
              </div>  
          
           <div className="col-sm-9">
-          <Grid  container spacing={4}>
+          <Grid  container spacing={2}>
                {
                   startups.map(singleStartup =><Grid  item xs={12} md={6} lg={4} key={singleStartup.id}> <SingleStartup  singleStartup={singleStartup}></SingleStartup></Grid>)
                }

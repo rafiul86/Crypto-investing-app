@@ -1,9 +1,17 @@
 .nav-container{
     text-decoration: none;
-    margin: 10px;
+    margin: 15px;
     color: antiquewhite;
   }
-  
-  .nav-design{
-    background: linear-gradient(104.61deg, #FF00B8 2.65%, #FF655B 51.83%, #151371 100%);
+  .icon-container{
+    margin: 20px;
   }
+  .brand-design{
+    height : 50px;
+    width : 80px;
+    margin-left: 40px;
+  }
+  .nav-design{
+    background: linear-gradient(104.61deg, #151371 2.65%, #FF655B 51.83%, #FF00B8 100%);
+  }
+  

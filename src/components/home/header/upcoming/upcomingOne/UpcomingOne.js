@@ -1,57 +1,22 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-import Avatar from '@material-ui/core/Avatar';
 import { Link } from 'react-router-dom';
+import mangoswap from '../../../../../images/mangoswap.png';
+import fundraise from '../../../../../images/fundRaise.png'
 
 
-const useStyles = makeStyles({
-    root: {
-      minWidth: 275,
-    },
-    bullet: {
-      display: 'inline-block',
-      margin: '0 2px',
-      transform: 'scale(0.8)',
-    },
-    title: {
-      fontSize: 14,
-    },
-    pos: {
-      marginBottom: 12,
-    },
-  });
 const UpcomingOne = ({singleStartup}) => {
-    const classes = useStyles();
+    
     return (
-        <Card className={classes.root} variant="outlined">
-      <CardContent>
-      <Avatar aria-label="recipe" className={classes.avatar}>
-            R
-          </Avatar>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
-          {singleStartup.title}
-        </Typography>
-        <Typography variant="h5" component="h2">
-          {singleStartup.description}
-        </Typography>
-        <Typography className={classes.pos} color="textSecondary">
-          adjective
-        </Typography>
-        <Typography variant="body2" component="p">
-          well meaning and kindly.
-          <br />
-          {'"a benevolent smile"'}
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button  size="small"><Link to={`/incubator/${singleStartup.id}`}>Learn More</Link></Button>
-      </CardActions>
-    </Card>
+      <div className="card-container">
+        <div className='title-container'>
+          <img style={{width : 35 , height : 35}} src={mangoswap}/>
+          <h3> {singleStartup.title}</h3>
+        </div>
+        <p className='card-description'>{singleStartup.description}</p>
+        <img className='card-image' src={fundraise} />
+        <button className='btn-left'  size="small"><Link className='link-style' to='/fundStartUp'>Fund Startup</Link></button>
+        <button className='btn-right'  size="small"><Link className='link-style' to={`/incubator/${singleStartup.id}`}>Learn More</Link></button>
+      </div>
     );
 };
 

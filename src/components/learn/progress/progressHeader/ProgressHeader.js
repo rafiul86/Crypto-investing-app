@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ProgressHeader = () => {
+const ProgressHeader = ({featuredCourseDetails}) => {
     return (
         <div>
-            <h1>This is Progress Header</h1>
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/VZmd8EOj3UA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     );
 };

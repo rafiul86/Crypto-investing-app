@@ -8,11 +8,12 @@ import ProgressList from './ProgressList';
 
 const Progress = () => {
 
-    const {id} = useParams()
+    const {id} = useParams();
+    console.log(id)
     const featuredCourseDetails = featuredCoursesData.find( featuredCourse => featuredCourse.id == id)
     const handleClick = () =>{
         // this button is for resume the course
-        console.log('start course here')
+        
     }
     return (
         <div className="row">
@@ -21,7 +22,7 @@ const Progress = () => {
             <SideBar />
             </div>
             <div className="col-sm-9 col-md-9 col-lg-9">
-                <ProgressHeader />
+                <ProgressHeader featuredCourseDetails={featuredCourseDetails}/>
                 <ProgressList featuredCourseDetails={featuredCourseDetails}/>
             </div>
         </div>

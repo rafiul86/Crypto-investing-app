@@ -1,18 +1,18 @@
 
 [{"id" : 1,
-    "logo" : "",
+    "videoLink" : "https://youtu.be/VZmd8EOj3UA",
     "title" : "Learn Solidity",
    "completePercentage" : "81% completed",
    "module": " 8.1/10"
         },
         {"id" : 2,
-            "logo" : "",
+            "videoLink" : "https://youtu.be/rZ8fOWA7RFk",
             "title" : "Basic Cryptocurrency",
            "completePercentage" : "84% completed",
            "module": " 8.4/10"
          },
          {"id" : 3,
-                    "logo" : "",
+                    "videoLink" : "https://youtu.be/2XxHOrBl5qo",
                     "title" : "Smart Contracts",
                    "completePercentage" : "87% completed",
                    "module": " 8.7/10"

@@ -1,0 +1,26 @@
+.card-group{
+    text-align: left;
+    color: white;
+    padding: 20px;
+}
+.card-container-mycourse{
+    height: 280px;
+    width: 470px;
+    border-radius: 10px;
+    border: 1px solid white ;
+}
+.mycourse-btn{
+    color: white;
+    border-radius: 10px;
+    height: 35px;
+    width: 120px;
+    background: linear-gradient(104.61deg, #FF00B8 2.65%, #FF655B 51.83%, #FFC700 100%);
+}
+.image-progress{
+    max-width : 420px
+}
+.text-white-mycourse{
+    color : white;
+    text-align: right;
+    margin-right: 50px;
+}

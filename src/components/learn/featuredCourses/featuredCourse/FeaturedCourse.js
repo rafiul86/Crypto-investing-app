@@ -1,61 +1,19 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-import Avatar from '@material-ui/core/Avatar';
+import progressbar from '../../../../images/progressbar.png'
 import { Link } from 'react-router-dom';
-
-
-const useStyles = makeStyles({
-    root: {
-      minWidth: 275,
-    },
-    bullet: {
-      display: 'inline-block',
-      margin: '0 2px',
-      transform: 'scale(0.8)',
-    },
-    title: {
-      fontSize: 14,
-    },
-    pos: {
-      marginBottom: 12,
-    },
-  });
 const FeaturedCourse = ({featuredCourse}) => {
-    const classes = useStyles();
-    return (
-        <Card className={classes.root} variant="outlined">
-      <CardContent>
-      <Avatar aria-label="recipe" className={classes.avatar}>
-            R
-          </Avatar>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
-          {featuredCourse.title}
-        </Typography>
-        <Link to={`/progress/${featuredCourse.id}`}>Learn</Link>
-        <Typography variant="h5" component="h2">
-          {featuredCourse.completePercentage}
-        </Typography>
-        <Typography className={classes.pos} color="textSecondary">
-          adjective
-        </Typography>
-        <Typography variant="body2" component="p">
-          {featuredCourse.module}
-          <br />
-          {'"a benevolent smile"'}
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button  size="small"><Link to={`/incubator/${featuredCourse.id}`}>Learn More</Link></Button>
-      </CardActions>
-    </Card>
-    );
+  return (
+    <div className="card-container-mycourse">
+      <div className="card-group">
+      <h3>{featuredCourse.title}</h3>
+      <h5>{featuredCourse.description}</h5>
+    </div>
+    <button className="mycourse-btn"> <Link to={`/progress/${featuredCourse.id}`}>Learn</Link></button>
+    <h3 className="text-white-mycourse">{featuredCourse.module}</h3>
+    <img className="image-progress" src={progressbar}/>
+    <p className="text-white">{featuredCourse.completePercentage}</p>
+    </div>
+  );
 };
-
-
 
 export default FeaturedCourse;

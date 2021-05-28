@@ -1,16 +1,21 @@
 import React from 'react';
 import SideBar from '../sideBar/SideBar';
-import NavBar from '../../shared/navBar/NavBar'
+import NavBar from '../../shared/navBar/NavBar';
+import './tutorial.css'
+
 const Tutorial = ({progressDetails}) => {
     console.log(progressDetails)
     return (
-        <div className="activity-design">
+        <div className="tutorial-container">
+            <button className="btn-tutorial-progress">progress</button>
             <div>
-            <button className="btn-course-progress">completed</button>
+            <h3 className="text-display">Our journey</h3>
+            <p className="text-display">{progressDetails.activity}</p>
             </div>
-            <h3 className="text-white">{progressDetails.header}{' '} : {progressDetails.title}</h3>
-            <p className="text-white">{progressDetails.activity}</p>
-            <p className="text-white">{progressDetails.activity}</p>
+            <div>
+            <h3 className="text-display">Our journey</h3>
+            <p className="text-display">{progressDetails.activity}</p>
+            </div>
         </div>
     );
 };

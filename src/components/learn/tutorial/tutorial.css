@@ -1,0 +1,19 @@
+.tutorial-container{
+    border : 1px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #151371;
+}
+.btn-tutorial-progress{
+    background-color: blue;
+    width : 70px;
+    font-size: 8px;
+    border-radius: 6px;
+    height : 18px;
+    color: white;
+    border : 1px red solid;
+}
+.text-display{
+    color: white;
+    text-align: justify;
+}

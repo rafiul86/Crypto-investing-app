@@ -13,6 +13,7 @@ const StartupData = ({individualDetails}) => {
             <h4>Founded {individualDetails.founded}</h4>
             </div>
             <div className="row">
+            <div className="heda-style">
             <div className="text-design">
                 <div className="web-style">
                 <p>Website</p>
@@ -22,9 +23,12 @@ const StartupData = ({individualDetails}) => {
                 <FontAwesomeIcon className="icon-incubator" icon={faLinkedin} />
                 <FontAwesomeIcon className="icon-incubator" icon={faFacebook} />
                 </div>
+            </div>
           </div>
+          <div className="heda-style">
           <h4>{individualDetails.location}</h4>
             <h4>{individualDetails.size}</h4>
+          </div>
             <ul>
                 <h3 className="text-left">Meet the team</h3>
                 <div className="d-flex">

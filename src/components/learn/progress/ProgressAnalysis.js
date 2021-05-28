@@ -16,7 +16,7 @@ const ProgressAnalysis = () => {
             <SideBar />
             </div>
             <div className="col-sm-9 col-md-9 col-lg-9">
-            <ProgressHeader />
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VZmd8EOj3UA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <Tutorial progressDetails={progressDetails} />
             </div>
         </div>

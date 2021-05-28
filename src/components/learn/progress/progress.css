@@ -1,8 +1,16 @@
 .progress-header-container{
-    height: 500px;
+    height: 400px;
 }
 .progress-container{
     background-color: #151371;
     padding: 50px;
-    height: 700px;
+    height: 650px;
+}
+.progress-head-period{
+    color: white;
+    text-align: left;
+    margin: 30px;
+}
+.tutorial-link{
+text-decoration: none;
 }

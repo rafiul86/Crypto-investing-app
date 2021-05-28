@@ -25,7 +25,7 @@ const Progress = () => {
             </div>
             <div className="col-sm-9 col-md-9 col-lg-9">
                 <ProgressHeader featuredCourseDetails={featuredCourseDetails}/>
-                <div>
+                <div className="progress-container">
                     {
                         lists.map(list => <ProgressList list={list}/>)
                     }

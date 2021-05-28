@@ -1,9 +1,15 @@
 import React from 'react';
+import progressbar from '../../../../images/progressbar.png';
+import '../progress.css'
 
 const ProgressHeader = ({featuredCourseDetails}) => {
     return (
-        <div>
-           <iframe width="560" height="315" src="https://www.youtube.com/embed/VZmd8EOj3UA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div className="progress-header-container">
+           <h1>{featuredCourseDetails.period}</h1>
+           <h4>Progress</h4>
+           <h4>{featuredCourseDetails.module}</h4>
+           <img className="image-progress" src={progressbar}/>
+           <h4>{featuredCourseDetails.completePercentage}</h4>
         </div>
     );
 };

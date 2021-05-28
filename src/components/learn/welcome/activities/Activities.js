@@ -11,14 +11,18 @@ const Activities = ({myCourse}) => {
     },[])
     return (
         <div className="activity-holder">
-            <div className="activity-container">
-                <h3> Module </h3>
+            <Grid container>
+                <Grid item xs={10} md={10} lg={10}>
+                <div className="activity-container">
+                <h3> Modules </h3>
                 <h3>Calender</h3>
                 <h3>Messages</h3>
             </div>
            {
                   modules.map(module=> <Activity  module={module} />)
            }
+                </Grid>
+            </Grid>
         </div>
     );
 };

@@ -4,6 +4,7 @@ import NavBar from '../../shared/navBar/NavBar';
 import progressData from './progress.json'
 import { useParams } from 'react-router';
 import ProgressHeader from './progressHeader/ProgressHeader';
+import Tutorial from '../tutorial/Tutorial';
 
 const ProgressAnalysis = () => {
     const {id} = useParams()
@@ -16,8 +17,7 @@ const ProgressAnalysis = () => {
             </div>
             <div className="col-sm-9 col-md-9 col-lg-9">
             <ProgressHeader />
-            <p>{progressDetails.activity}</p>
-            <p>{progressDetails.activity}</p>
+            <Tutorial progressDetails={progressDetails} />
             </div>
         </div>
     );

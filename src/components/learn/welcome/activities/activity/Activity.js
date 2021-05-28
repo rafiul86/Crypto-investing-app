@@ -1,16 +1,17 @@
 import React from 'react';
+import './activity.css';
+import progressbar from '../../../../../images/progressbar.png'
 
 const Activity = ({module}) => {
-    const design={
-        height :150,
-        maxWidth : 600,
-        backgroundColor : 'blue',
-        margin : 5,
-        padding : 10,       
-    }
+    
     return (
-        <div style={design}>
-            <h3 style={{alignItems : 'center', justifyContent : 'center'}}>{module.period}{' '} : {module.title}</h3>
+        <div className="activity-design">
+            <div>
+            <button className="btn-course-progress">completed</button>
+            </div>
+            <h3 className="text-white">{module.period}{' '} : {module.title}</h3>
+            <img className="image-progress" src={progressbar}/>
+            <p className="text-white">{module.completePercentage}</p>
         </div>
     );
 };

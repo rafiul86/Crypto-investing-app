@@ -9,7 +9,7 @@ const MyCourse = ({myCourse}) => {
       <h3>{myCourse.title}</h3>
       <h5>{myCourse.description}</h5>
     </div>
-    <button className="mycourse-btn"> <Link to={`/progress/${myCourse.id}`}>Learn</Link></button>
+    <button className="mycourse-btn"> <Link to={`/welcome/${myCourse.id}`}>Learn</Link></button>
     <h3 className="text-white-mycourse">{myCourse.module}</h3>
     <img className="image-progress" src={progressbar}/>
     <p className="text-white">{myCourse.completePercentage}</p>

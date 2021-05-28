@@ -4,7 +4,6 @@ import './navBar.css';
 import { Link } from "react-router-dom";
 import brand from '../../../images/brand.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faInstagram, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 const NavBar = () => {

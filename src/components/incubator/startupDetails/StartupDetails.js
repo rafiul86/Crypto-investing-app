@@ -5,7 +5,7 @@ import Cards from '../../../images/Cards.png';
 
 
 
-const StartupDetails = () => {
+const StartupDetails = ({individualDetails}) => {
     return (
         <div>
             <div className="startup-details bg-white">

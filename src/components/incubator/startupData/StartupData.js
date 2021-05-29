@@ -21,17 +21,31 @@ const StartupData = ({ individualDetails }) => {
           <div className="text-design">
             <div className="web-style">
               <p>Website</p>
-              <h6 className="icon-incubator">{individualDetails.website}</h6>
+              <h6 className="icon-incubator">
+                <a
+                  style={{ textDecoration: "none" }}
+                  href={individualDetails.website}
+                  target="_blank"
+                >
+                  {individualDetails.website}
+                </a>
+              </h6>
             </div>
-            <FontAwesomeIcon className="icon-incubator" icon={faTwitter} />
-            <FontAwesomeIcon className="icon-incubator" icon={faLinkedin} />
-            <FontAwesomeIcon className="icon-incubator" icon={faFacebook} />
+            <a href={individualDetails.twitter} target="_blank">
+              <FontAwesomeIcon className="icon-incubator" icon={faTwitter} />
+            </a>
+            <a href={individualDetails.linkedin} target="_blank">
+              <FontAwesomeIcon className="icon-incubator" icon={faLinkedin} />
+            </a>
+            <a href={individualDetails.facebook} target="_blank">
+              <FontAwesomeIcon className="icon-incubator" icon={faFacebook} />
+            </a>
           </div>
         </div>
       </div>
       <div className="heda-style">
-        <h4>{individualDetails.location}</h4>
-        <h4>{individualDetails.size}</h4>
+        <h4>Location : {individualDetails.location}</h4>
+        <h4> Size : {individualDetails.size}</h4>
       </div>
       <ul>
         <h3 className="text-left">Meet the team</h3>

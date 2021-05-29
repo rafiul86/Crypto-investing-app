@@ -9,7 +9,7 @@ const MyCourses = () => {
   }, []);
   return (
     <div>
-      <h1 style={{ textAlign: "start", color: "white" }}>My Courses</h1>
+      <h1 style={{ textAlign: "start", color: "white", padding : 30 }}>My Courses</h1>
       <Grid container spacing={4}>
         {myCourses.map((myCourse) => (
           <Grid item xs={12} md={6} lg={4} key={myCourse.id}>

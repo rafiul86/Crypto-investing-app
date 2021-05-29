@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import React from "react";
-import {  BrowserRouter as Router,  Switch,  Route,  Link} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./components/home/Home";
 import Incubator from "./components/incubator/Incubator";
 import Learn from "./components/learn/Learn";
@@ -13,7 +13,6 @@ import Main from "./components/main/Main";
 import StartupDetails from "./components/incubator/startupDetails/StartupDetails";
 import Upcoming from "./components/home/header/upcoming/Upcoming";
 import ProgressAnalysis from "./components/learn/progress/ProgressAnalysis";
-
 
 function App() {
   return (
@@ -54,7 +53,7 @@ function App() {
             <ProgressAnalysis />
           </Route>
         </Switch>
-    </Router>
+      </Router>
     </div>
   );
 }

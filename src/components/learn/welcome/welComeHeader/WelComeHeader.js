@@ -2,6 +2,8 @@ import { Grid } from "@material-ui/core";
 import React from "react";
 import image from "../../../../images/humanCircle.png";
 import "./welcomeHeader.css";
+import Tippy from "@tippyjs/react";
+import "tippy.js/dist/tippy.css";
 
 const WelComeHeader = ({ handleClick }) => {
   return (
@@ -29,9 +31,11 @@ const WelComeHeader = ({ handleClick }) => {
                 Completed
               </span>
             </h3>
+            <Tippy content="Resume enrolled course here">
             <button className="btn-resume" onClick={handleClick}>
               Resume
             </button>
+            </Tippy>
           </div>
         </Grid>
       </Grid>

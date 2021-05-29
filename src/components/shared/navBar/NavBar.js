@@ -5,6 +5,9 @@ import { Link } from "react-router-dom";
 import brand from '../../../images/brand.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
+
 
 const NavBar = () => {
   return (
@@ -25,17 +28,23 @@ const NavBar = () => {
           <FontAwesomeIcon className="icon-container" icon={faInstagram} />
           </div>
           <Nav className="mr-auto">
+          <Tippy content="Main menu">
             <Link className="nav-container" to="/main">
             Home
             </Link>
+            </Tippy>
+            <Tippy content="click to view startups">
             <Link className="nav-container" to="/home">
               Incubator
             </Link>
+            </Tippy>
           </Nav>
           <Nav>
+          <Tippy content="view our courses">
             <Link className="nav-container" to="/learn">
               Learn
             </Link>
+            </Tippy>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

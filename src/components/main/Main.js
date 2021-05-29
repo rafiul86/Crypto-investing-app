@@ -3,7 +3,8 @@ import React from "react";
 import { useHistory } from "react-router";
 import crypto from "../../images/crypto.jpg";
 import NavBar from "../shared/navBar/NavBar";
-
+import Tippy from "@tippyjs/react";
+import "tippy.js/dist/tippy.css";
 const Main = () => {
   const history = useHistory();
 
@@ -35,9 +36,11 @@ const Main = () => {
                 Legends
               </span>
             </h3>
-            <button className="btn-resume" onClick={handleClick}>
-              Start journey
-            </button>
+            <Tippy content="Jump into the startups">
+              <button className="btn-resume" onClick={handleClick}>
+                Start journey
+              </button>
+            </Tippy>
           </div>
         </Grid>
       </Grid>

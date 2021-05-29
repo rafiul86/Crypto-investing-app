@@ -14,7 +14,7 @@ const MyCourses = () => {
     <div>
       <div className="row">
         <div className="col-sm-4">
-        <h1 style={{ textAlign: "start", color: "white", padding : 30 }}>Featured Courses</h1>
+        <h1 style={{ textAlign: "start", color: "white", padding : 30 }}>My Courses</h1>
         </div>
         <div className="col-sm-8">
         <div style={{ borderTop: "3px solid #fff ", margin: 60 }}></div>

@@ -14,7 +14,7 @@ const Upcoming = () => {
         <div className="col-sm-3 text-white ">
           <div className="card-body feature">
             <h5 className="card-title">
-              Featured
+              Upcoming
               <br /> Startups
             </h5>
             <p className="card-text">

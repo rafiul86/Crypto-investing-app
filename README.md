@@ -1,4 +1,4 @@
-##  minority-programmers-front-end-test
+##  Minority-Programmers Investing page Front-end
 
 
 
@@ -26,4 +26,6 @@ This is the website [https://minority-programmers-skiltest.web.app/home](https:/
 
 
 ```
-## Tech used: React, React-Router, Hooks, Figma, Google Firebase, Material UI, Bootstrap
+![Cryptoswap](https://user-images.githubusercontent.com/68476971/180772660-7c2ca634-3acc-4aab-8a98-430083070e6f.png)
+
+## Tech used: React, Node.js. Tailwind CSS,  React-Router, Hooks, Figma, Google Firebase, Material UI, Bootstrap, Solidity language etc.

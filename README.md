@@ -14,7 +14,7 @@
 __Beside this you may find it better in many other ways__
 
 
-This is the website [https://minority-programmers-skiltest.web.app/home](https://minority-programmers-skiltest.web.app/home) to view it in the browser.
+[https://minority-programmers-skiltest.web.app/home](https://minority-programmers-skiltest.web.app/home) to view it in the browser.
 
 
 
